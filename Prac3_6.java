@@ -12,7 +12,6 @@ public class Prac3_6{
 		System.out.print("整数値を入力してください：");
 		int x = Integer.parseInt(br.readLine());
 
-		//if文かswitch文か (参考)https://www.sejuku.net/blog/22240
 		if (x >= 0) {
 			if (x % 2 == 0) {
 				System.out.println(x + "は正の偶数です");
