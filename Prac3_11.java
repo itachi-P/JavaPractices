@@ -20,7 +20,7 @@ public class Prac3_11 {
 	{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int number = Integer.parseInt(br.readLine());
-		if (number < 1 | number > 9) {
+		if (number < 1 || number > 9) {
 			System.out.println("数値は1～9の間で入力してください。");
 			number = Integer.parseInt(br.readLine());
 		}
