@@ -2,7 +2,7 @@ package jouken;
 
 import java.util.Scanner;
 
-public class Prac6_Method03 {
+public class Prac6_3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package jouken;
 
-public class Prac6_Method02 {
+public class Prac6_2 {
 
 	public static void main(String[] args) {
 		int x = 15, y = 8;

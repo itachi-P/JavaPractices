@@ -1,6 +1,6 @@
 package jouken;
 //文字で三角形を描くメソッド作成
-public class Prac6_Method04 {
+public class Prac6_4 {
 
 	public static void main(String[] args) {
 		TriangleDraw(3);
