@@ -30,7 +30,7 @@ public class CoinCase {
 			c1 += num;
 			break;
 		default:
-			System.out.println("500円以下の現存する硬貨で入力してください");
+			System.out.println(type + " エラー：500円玉以下の一般的な流通硬貨を指定してください");
 		}
 
 	}
@@ -49,19 +49,16 @@ public class CoinCase {
 		case 1:
 			return c1;
 		default:
-			System.out.println("その額面の硬貨は存在しません");
+//			下記のメッセージを表示するなら呼び出し側のmainの中で戻り値0の時if分岐する方がベター
+//			System.out.println("その額面の硬貨は存在しません");
 			return 0;
 		}
 	}
 
-	//引数なしで全ての効果の枚数を取得するオーバーロードメソッド
-	public void GetCount() {
-		System.out.println("500円玉の枚数：" + this.GetCount(500));
-		System.out.println("100円玉の枚数：" + this.GetCount(100));
-		System.out.println("50円玉の枚数：" + this.GetCount(50));
-		System.out.println("10円玉の枚数：" + this.GetCount(10));
-		System.out.println("5円玉の枚数：" + this.GetCount(5));
-		System.out.println("1円玉の枚数：" + this.GetCount(1));
+	//引数なしで全ての硬貨の総枚数を取得するオーバーロードメソッド
+	public int GetCount() {
+		return this.GetCount(500) + this.GetCount(100) + this.GetCount(50)
+				+ this.GetCount(10) + this.GetCount(5) + this.GetCount(1);
 	}
 
 	public int GetAmount() {
